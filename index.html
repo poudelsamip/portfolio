@@ -132,24 +132,24 @@
 
 
 <script>
-    // Get the form element by its ID
+    
     var myForm = document.getElementById('myForm');
 
-    // Get the button element by its ID
+    
     var sendButton = document.getElementById('send_btn');
 
-    // Add a click event listener to the button
+    
     sendButton.addEventListener('click', function(event) {
-        // Prevent the default form submission behavior
+        
         event.preventDefault();
 
-        // Check if the form is valid
+        
         if (myForm.checkValidity()) {
-            // Display a multiline alert when the button is clicked
+            
             alert('Your message will go no where\nBecause I can not code Backend');
             myForm.reset();
         } else {
-            // If the form is not valid, display an error message
+            
             alert('Fill all the places correctly');
         }
     });
