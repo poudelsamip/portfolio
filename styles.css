@@ -102,13 +102,13 @@ nav a:hover{
 
 .aboutpage{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    
+    /*margin-bottom: 100px;*/
 }
 
 .about_head{
@@ -129,19 +129,65 @@ nav a:hover{
 }
 
 
-.aboutpage:hover #header{
-    background-color: brown;
-    transition: background-color o.5s ease;
-}
-
-
 
 
 /* ABOUT PAGE OVER */
 
-.contactpage{
+/* PROJECTS PAGE START */
+
+
+
+.projects{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_content{
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.contentofprojects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.allprojects{
+    height: 300px;
+    width: 200px;
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+    overflow-y: hidden;
+    border: 1px solid white;
+}
+
+img{
+    height: 200px;
+    width: 190px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.desc{
+    font-size: 13px;
+    line-height: 15px;
+}
+
+
+/* PROJECTS PAGE OVER */
+
+.contactpage{
+    /*margin-top: 100px;*/
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,8 +202,6 @@ nav a:hover{
     border-radius: 20px;
     border: solid 1px white;
     padding-top: 15px;
-    width: auto;
-
 }
 
 #cont{
@@ -304,6 +348,11 @@ hr{
         justify-content: center;
         align-items: center;
         padding: 0;
+        background-image: url(images/bg.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .logo{
@@ -349,16 +398,18 @@ hr{
         position: fixed;
         bottom: 0;
         height: auto;
-        width: 98%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        padding: 0;
-        margin:0 2px 2px 2px;
-        border: 1px solid white;
-        border-radius: 10px;
-        background-color: rgb(127, 128, 130);
+        padding-bottom: 4px;
+        margin: 0;
+        background-image: url(images/bg.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 
@@ -375,5 +426,12 @@ hr{
         display: block;
     }
 
+    .contactpage{
+        margin-top: 120px;
+    }
+
+    .aboutpage{
+        margin-bottom: 120px;
+    }
 }
 
