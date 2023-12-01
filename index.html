@@ -99,13 +99,15 @@
 			<div id="cont"><h1>Contact Me</h1></div>
 			<div class="main">
 				<div class="form">
-					<form id="myForm">
+					<iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if (submitted) {window.location='index.html';}"></iframe>
+					
+					<form  id="myForm" target="hiddenConfirm" onsubmit="submitted=true">
 						<div class="fname">
-							<input class="inp" type="text" required placeholder="Full Name *"><br>
-							<input class="inp" type="email" required placeholder="Email *"><br>
-							<textarea class="inpt" placeholder="Your Message *" required></textarea>
+							<input name="entry.2119372970" class="inp" type="text" required placeholder="Full Name *"><br>
+							<input name="entry.238163377" class="inp" type="email" required placeholder="Email *"><br>
+							<textarea name="entry.2023211381" class="inpt" placeholder="Your Message *" required ></textarea>
 							<br>
-							<input type="submit" id="send_btn" value="Send">
+							<button type="submit" id="send_btn">Send</button>
 						</div>	
 					</form>
 				</div>
@@ -123,7 +125,7 @@
 						<a target="_blank" href="https://www.instagram.com/samip_poudel123"><i class="fa-brands fa-square-instagram fa-xl" style="color: #ffffff;"></i></a>
 						<a target="_blank" href="https://twitter.com/samip_poudel123"><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #ffffff;"></i></a>
 						<a target="_blank" href="https://www.linkedin.com/in/samip-poudel123"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i></a>
-						<a target="_blank" href="https://github.com/poudelsamip"><i class="fa-brands fa-square-github fa-xl" style="color: #ffffff;"></i></a>
+						<a target="_blank" href="https://github.com/samipdon"><i class="fa-brands fa-square-github fa-xl" style="color: #ffffff;"></i></a>
 					</div>
 				</div>
 			</div>
@@ -131,34 +133,7 @@
 	</div>
 
 
-<script>
-    
-    var myForm = document.getElementById('myForm');
-
-    
-    var sendButton = document.getElementById('send_btn');
-
-    
-    sendButton.addEventListener('click', function(event) {
-        
-        event.preventDefault();
-
-        
-        if (myForm.checkValidity()) {
-            
-            alert('Your message will go no where\nBecause I can not code Backend');
-            myForm.reset();
-        } else {
-            
-            alert('Fill all the places correctly');
-        }
-    });
-</script>
-
-
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
