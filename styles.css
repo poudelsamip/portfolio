@@ -493,10 +493,17 @@ hr{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 0;
     }
 
     #mainname{
-    text-align: center;
+        text-align: center;
+    }
+
+    #myphoto{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
     }
 }
 
