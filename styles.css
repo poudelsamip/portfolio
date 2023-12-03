@@ -494,6 +494,7 @@ hr{
         justify-content: center;
         align-items: center;
         padding-top: 0;
+        max-height: 100vh;
     }
 
     #mainname{
