@@ -113,6 +113,8 @@ nav a:hover{
     font-weight: bold;
 }
 
+
+
 #hiiam{
     font-size: 50px;
     margin-bottom: -20px;
@@ -194,7 +196,7 @@ nav a:hover{
 }
 
 .allprojects{
-    height: 300px;
+    height: auto;
     width: 200px;
     max-width: 100%;
     background-color: transparent;
@@ -211,15 +213,20 @@ nav a:hover{
 }
 
 .imgproject{
-    height: 200px;
+    height: 190px;
     width: 190px;
     border-radius: 10px;
     padding-top: 5px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .desc{
     font-size: 13px;
     line-height: 15px;
+    margin-bottom: 5px;
 }
 
 
