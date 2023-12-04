@@ -480,11 +480,11 @@ hr{
     }
 
     .projects{
-        height: auto;
+        height: 100vh;
     }
 
     .allprojects{
-        width: 60%;
+        width: 100%;
         flex-grow: 0;
     }
 
@@ -503,8 +503,8 @@ hr{
         justify-content: flex-end;
         align-items: flex-start;
         padding: 0 0 0 5px;
-        height: 300px;
-        width: auto;
+        height: 90vh;
+        width: 100vw;
         background-image: url(images/mainimg.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -512,14 +512,14 @@ hr{
     }
 
     #hiiam{
-        font-size: 30px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+        font-size: 40px;
+        text-shadow:; 2px 2px 4px rgba(0, 0, 0, 5);
     }
 
     #mainname{
         /*text-align: center;*/
-        font-size: 40px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5); 
+        font-size: 50px;
+        text-shadow: 2px 2px 20px rgba(0, 0, 0, 5);
     }
 
     #myphoto{
@@ -534,6 +534,10 @@ hr{
         margin-top: -5px;
         margin-right: 2px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    }
+
+    .btns{
+        display: none;
     }
 
     .forborder{
