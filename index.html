@@ -10,18 +10,25 @@
 
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<h1><span>SAMIP</span></h1>
-		</div>
-		
-		<nav>
-			<a href="#">HOME</a>
-			<a href="#aboutpg">ABOUT</a>
-			<a href="#projectspg">PROJECTS</a>
-			<a href="#contact">CONTACT</a>
-		</nav>
-	</header>
+	
+	<nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a><i class="fa-solid fa-x fa-lg" style="color: #ffffff;"></i></a></li>
+            <li onclick=hideSidebar()><a href="index.html">Home</a></li>
+            <li onclick=hideSidebar()><a href="#aboutpg">About</a></li>
+            <li onclick=hideSidebar()><a href="#projectspg">Projects</a></li>
+            <li onclick=hideSidebar()><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+            <span class="navname">SAMIP
+            </span>
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="#aboutpg">About</a></li>
+            <li class="hideonmobile"><a href="#projectspg">Projects</a></li>
+            <li class="hideonmobile"><a href="#contact">Contact</a></li>
+            <li class="menubtn" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </nav>
 
 
 
