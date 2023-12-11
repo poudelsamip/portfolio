@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -41,21 +45,26 @@ nav ul{
 }
 
 nav li{
-    /*margin-bottom: 5px;*/
+    margin-bottom: 30px;
 }
 
 nav a{
   height: 100%;
-  margin: 0 30px;
+  margin: 0 20px;
+  padding: 3px 6px;
   text-decoration: none;
   display: flex;
   align-items: center;
   color: white;
-  font-weight: bold;
+  /*font-weight: bold;*/
   border: 1px solid transparent;
+  border-radius: 20px;
 }
 nav a:hover{
-  border: 1px solid white;
+  /*border: 1px solid white;*/
+  /*text-decoration: underline;*/
+  color: orange;
+  transform: scale(1.1);
 }
 nav li:first-child{
   margin-right: auto;
@@ -66,30 +75,36 @@ nav li:first-child{
     margin-right: auto;
     margin-left: 20px;
 }
-
+.navname:hover{
+    cursor: default;
+}
 .sidebar{
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   backface-visibility: hidden;
-  width: 100%;
+  width: 60%;
   z-index: 999;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(images/bg.jpg);
+  /*background-image: url(images/bg.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
+  background-color: rebeccapurple;
 }
 .sidebar li{
   width: 100%;
 
 }
+
+
+
 .sidebar a{
   width: 100%;
   display: flex;
@@ -245,8 +260,8 @@ nav li:first-child{
 }
 
 .allprojects:hover{
-    background-color: grey;
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .imgproject{
@@ -433,6 +448,7 @@ hr{
     }
     .menubtn{
         display: block;
+        margin: 0;
     }
 
     .main {
