@@ -44,8 +44,8 @@ nav ul{
   align-items: center;
 }
 
-nav li{
-    margin-bottom: 30px;
+nav .sidebar li{
+    margin-bottom: 50px;
 }
 
 nav a{
@@ -77,6 +77,9 @@ nav li:first-child{
 }
 .navname:hover{
     cursor: default;
+}
+.cutbtn{
+    position: absolute;
 }
 .sidebar{
   position: fixed;
@@ -576,6 +579,10 @@ hr{
         margin-left: 0;
     }
     .sidebar li:first-child{
-        margin-bottom: 50px;
+        position: absolute;
+        top: 35px;
+        right: 50px;
+        margin: 0;
+        width: 0;
     }
 }
