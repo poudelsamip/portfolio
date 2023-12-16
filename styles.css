@@ -45,9 +45,9 @@ nav ul{
   align-items: center;
 }
 
-nav .sidebar li{
+/*nav .sidebar li{
     margin-bottom: 50px;
-}
+}*/
 
 nav a{
   height: 100%;
@@ -67,9 +67,7 @@ nav a:hover{
   color: orange;
   transform: scale(1.1);
 }
-nav li:first-child{
-  margin-right: auto;
-}
+
 .navname{
     font-size: 40px;
     font-weight: bold;
@@ -81,30 +79,22 @@ nav li:first-child{
 }
 .cutbtn{
     position: absolute;
+    top: -34px;
+    right: 13px;
 }
 .sidebar{
   position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
+  top: 60px;
+  height: 30vh;
   backface-visibility: hidden;
-  width: 60%;
+  width: 100%;
   z-index: 999;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*background-image: url(images/bg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
+  align-items: flex-start;
+  justify-content: space-evenly;
   background-color: rebeccapurple;
-}
-.sidebar li{
-  width: 100%;
-
 }
 
 
@@ -579,11 +569,11 @@ hr{
         font-size: 25px;
         margin-left: 0;
     }
-    .sidebar li:first-child{
+    /*.sidebar li:first-child{
         position: absolute;
         top: 35px;
         right: 50px;
         margin: 0;
         width: 0;
-    }
+    }*/
 }
