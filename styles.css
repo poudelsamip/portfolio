@@ -125,6 +125,7 @@ nav a:hover{
     align-items: center;
     border: 1px solid white;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px black;
 }
 
 .mainimage{
@@ -296,6 +297,7 @@ a{
     border-radius: 20px;
     border: solid 1px white;
     padding-top: 15px;
+    box-shadow: 0px 0px 20px 5px black;
 }
 
 #cont{
