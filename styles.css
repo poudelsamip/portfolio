@@ -24,7 +24,7 @@ body{
 }
 
 nav{
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
     width: 100%;
     position: fixed;
     top: 0;
@@ -125,7 +125,7 @@ nav a:hover{
     align-items: center;
     border: 1px solid white;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 5px black;
+    margin-top: 60px;
 }
 
 .mainimage{
@@ -195,13 +195,11 @@ nav a:hover{
     text-align: justify;
 }
 
-.about_head{
 
-}
 
 .aboutme{
     margin-top: 15px;
-    max-width: 75%
+    max-width: 50%
 }
 
 #about_name{
@@ -211,8 +209,6 @@ nav a:hover{
     font-weight: bold;
 
 }
-
-
 
 
 /* ABOUT PAGE OVER */
@@ -252,6 +248,7 @@ nav a:hover{
     flex-grow: 1;
     overflow-y: hidden;
     border: 1px solid white;
+    padding: 0 5px 5px 5px;
 }
 
 .allprojects:hover{
@@ -299,6 +296,7 @@ a{
     padding-top: 15px;
     box-shadow: 0px 0px 20px 5px black;
 }
+
 
 #cont{
     width: 100%;    
@@ -534,7 +532,7 @@ hr{
 
     #hiiam{
         font-size: 40px;
-        text-shadow:; 2px 2px 4px rgba(0, 0, 0, 5);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
     }
 
     #mainname{
