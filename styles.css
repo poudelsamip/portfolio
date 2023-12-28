@@ -501,7 +501,6 @@ hr{
     }
 
     .allprojects{
-        width: 100%;
         flex-grow: 0;
     }
 
