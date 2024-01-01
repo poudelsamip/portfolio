@@ -514,6 +514,7 @@ hr{
         display: flex;
         flex-direction: column;
         border: none;
+        box-shadow: 0;
     }
 
     .maincontent{
