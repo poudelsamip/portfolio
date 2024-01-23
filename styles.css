@@ -24,7 +24,7 @@ body{
 }
 
 nav{
-    
+    z-index: 1;
     width: 100%;
     position: fixed;
     top: 0;
@@ -161,8 +161,6 @@ nav a:hover{
     font-weight: bold;
 }
 
-
-
 #hiiam{
     font-size: 50px;
     margin-bottom: -20px;
@@ -219,7 +217,8 @@ nav a:hover{
 
 
 .projects{
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -501,7 +500,7 @@ hr{
     }
 
     .allprojects{
-        flex-grow: 0;
+        width: 100%;
     }
 
     
@@ -514,7 +513,7 @@ hr{
         display: flex;
         flex-direction: column;
         border: none;
-        box-shadow: 0;
+        box-shadow: none;
     }
 
     .maincontent{
