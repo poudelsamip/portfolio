@@ -500,6 +500,10 @@ hr{
         height: 100vh;
     }
 
+    .projects a{
+        max-width: 60%;
+    }
+
     .allprojects{
         width: 100%;
     }
