@@ -8,6 +8,7 @@
 }
 :root{
     --light: #fff;
+    --dark: #000;
 }
 body{
     background-color: #202020;
@@ -15,6 +16,24 @@ body{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.mode-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    background-color: var(--light);
+    cursor: pointer;
+    border: 1px solid var(--dark);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--light);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode-menu svg{
+    fill: var(--dark);
 }
 .image{
     height: 100vh;
@@ -53,10 +72,10 @@ p{
     display: flex;
     gap: 20px;
 }
-svg{
+.info .mainbtn a svg{
     fill: var(--light);
 }
-button{
+.mainbtn{
     width: fit-content;
     font-size: 15px;
     font-weight: bold;
@@ -66,8 +85,8 @@ button{
     border: 2px solid var(--light);
     cursor: pointer;
 }
-button:hover{
-    color: #000;
+.mainbtn:hover{
+    color: var(--dark);
     background-color: var(--light);
 }
 #linkedin a{
@@ -107,5 +126,17 @@ button:hover{
     }
     .image img{
         height: 250px;
+    }
+    .info #greet{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .info #name-main{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    .info #name-info{
+        font-size: 25px;
+        font-weight: 900;
     }
 }
