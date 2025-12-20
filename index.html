@@ -8,222 +8,223 @@
     <title>Samip Poudel</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">SP</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-logo">SP.</div>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
             <button class="mode-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
             </button>
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-container">
+    <main>
+        <section class="hero">
             <div class="hero-content">
-                <p class="hero-greeting">Hi, I am</p>
-                <h1 class="hero-name">Samip Poudel</h1>
-                <p class="hero-title">Full Stack Developer</p>
-                <p class="hero-description">Crafting elegant solutions to complex problems. Specializing in modern web technologies and scalable applications.</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary"><a href="https://www.linkedin.com/in/samippoudel123/" target="_blank"><i class="fab fa-linkedin"></i> Connect</a></button>
-                    <button class="btn btn-secondary"><a href="#projects">View Projects</a></button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="profile2.png" alt="Samip Poudel">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I'm a passionate Full Stack Developer with expertise in building modern web applications. I love turning ideas into reality through clean code and intuitive user interfaces.</p>
-                <div class="skills">
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">PostgreSQL</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
+                <div class="hero-text">
+                    <span class="hero-label">Full Stack Developer</span>
+                    <h1 class="hero-title">
+                        <span>Samip</span>
+                        <span>Poudel</span>
+                    </h1>
+                    <p class="hero-desc">Building scalable web applications with modern technologies. Specialized in MERN stack development.</p>
+                    <div class="hero-actions">
+                        <a href="https://www.linkedin.com/in/samippoudel123/" target="_blank" class="btn-primary">
+                            <span>Connect</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1 15L15 1M15 1H5M15 1V11" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#work" class="btn-secondary">View Work</a>
                     </div>
-                    <div class="project-content">
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile2.png" alt="Samip Poudel">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <span class="stack-label">Tech Stack</span>
+                <div class="stack-items">
+                    <span>MongoDB</span>
+                    <span>Express</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work">
+            <div class="work-header">
+                <h2>Selected Work</h2>
+                <p>Projects that showcase my expertise</p>
+            </div>
+
+            <div class="projects">
+                <div class="project">
+                    <div class="project-visual">
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-info">
                         <h3>E-Commerce Platform</h3>
-                        <p>A full-featured online shopping platform with payment integration, user authentication, and real-time inventory management.</p>
-                        <div class="project-tags">
+                        <p>Full-stack online marketplace with secure payment processing, real-time inventory tracking, and admin dashboard.</p>
+                        <div class="project-tech">
                             <span>React</span>
                             <span>Node.js</span>
                             <span>MongoDB</span>
+                            <span>Stripe</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="link">View Project →</a>
+                            <a href="#" class="link">GitHub →</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-tasks"></i>
-                        </div>
+                <div class="project">
+                    <div class="project-visual">
+                        <div class="project-number">02</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>Collaborative task management tool with real-time updates, team collaboration features, and advanced filtering options.</p>
-                        <div class="project-tags">
-                            <span>Vue.js</span>
+                    <div class="project-info">
+                        <h3>Task Management System</h3>
+                        <p>Collaborative workspace with real-time updates, drag-and-drop interface, and team analytics dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
                             <span>Express</span>
+                            <span>MongoDB</span>
                             <span>Socket.io</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="link">View Project →</a>
+                            <a href="#" class="link">GitHub →</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
+                <div class="project">
+                    <div class="project-visual">
+                        <div class="project-number">03</div>
                     </div>
-                    <div class="project-content">
+                    <div class="project-info">
                         <h3>Analytics Dashboard</h3>
-                        <p>Interactive data visualization dashboard with real-time analytics, custom reports, and export functionality.</p>
-                        <div class="project-tags">
+                        <p>Data visualization platform with interactive charts, custom reports, and API integration for business insights.</p>
+                        <div class="project-tech">
                             <span>React</span>
-                            <span>D3.js</span>
-                            <span>Python</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Chart.js</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="link">View Project →</a>
+                            <a href="#" class="link">GitHub →</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-description">I'm always interested in hearing about new projects and opportunities.</p>
-            <div class="contact-links">
-                <a href="mailto:samip@example.com" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/samippoudel123/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h2>Let's Work Together</h2>
+                <p>Available for freelance projects and full-time opportunities</p>
+                <div class="contact-methods">
+                    <a href="mailto:samip@example.com" class="contact-link">
+                        <span>Email</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 16L16 4M16 4H6M16 4V14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samippoudel123/" target="_blank" class="contact-link">
+                        <span>LinkedIn</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 16L16 4M16 4H6M16 4V14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span>GitHub</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 16L16 4M16 4H6M16 4V14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Samip Poudel. All rights reserved.</p>
+        <div class="footer-content">
+            <span>© 2024 Samip Poudel</span>
+            <span>Full Stack Developer</span>
+        </div>
     </footer>
 
     <script>
-        // Dark mode toggle
-        const modeToggle = document.querySelector('.mode-menu');
-        const body = document.body;
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
 
-        // Check for saved theme preference
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            body.classList.add(currentTheme);
-        }
-
-        modeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
             
-            // Save theme preference
-            if (body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark-mode');
-            } else {
-                localStorage.removeItem('theme');
-            }
+            setTimeout(() => {
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            }, 100);
         });
 
-        // Smooth scrolling for navigation links
+        // Dark mode
+        const modeBtn = document.querySelector('.mode-menu');
+        const body = document.body;
+        
+        const theme = localStorage.getItem('theme');
+        if (theme) body.classList.add(theme);
+
+        modeBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark-mode' : '');
+        });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
 
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
+        // Scroll reveal
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        // Observe all project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
+        document.querySelectorAll('.project, .contact-content').forEach(el => {
+            observer.observe(el);
         });
 
-        // Add active state to navigation links on scroll
+        // Parallax effect on hero
         window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-image');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
         });
     </script>
 </body>
