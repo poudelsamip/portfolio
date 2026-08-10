@@ -1,138 +1,269 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <title>Samip Poudel</title>
-    </head>
-    <body>
-        <div class="cursor"></div>
-        <div class="cursor-follower"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samip Poudel — Backend-Focused Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-overlay" aria-hidden="true"></div>
 
-        <nav class="nav">
-            <div class="nav-content">
-                <div class="nav-logo">Samip</div>
-                <div class="nav-right">
-                    <div class="nav-links">
-                        <a href="#work">Work</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    <button class="mode-menu" aria-label="Toggle theme">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="20px"
-                            viewBox="0 -960 960 960"
-                            width="20px"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-                            />
-                        </svg>
-                    </button>
-                </div>
+    <nav class="nav">
+      <div class="nav-content">
+        <a href="#top" class="nav-logo">samip<span class="dot">.</span>dev</a>
+        <div class="nav-links">
+          <a href="#stack"><span class="idx">01</span> stack</a>
+          <a href="#work"><span class="idx">02</span> projects</a>
+          <a href="#contact"><span class="idx">03</span> contact</a>
+        </div>
+        <a
+          href="https://www.linkedin.com/in/samippoudel123/"
+          target="_blank"
+          class="nav-cta"
+          >Connect →</a
+        >
+      </div>
+    </nav>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="ping"></span> available for work</p>
+          <h1 class="hero-title">
+            full&nbsp;stack<br />
+            <span class="outline">developer.</span>
+          </h1>
+          <p class="hero-desc">
+            I design and ship the systems underneath the product —
+            APIs, data models, and services that hold up under real
+            traffic. Frontend when the job needs one.
+          </p>
+          <div class="hero-actions">
+            <a
+              href="https://www.linkedin.com/in/samippoudel123/"
+              target="_blank"
+              class="btn-primary"
+              >View LinkedIn</a
+            >
+            <a href="#work" class="btn-secondary">See projects</a>
+          </div>
+        </div>
+
+        <div class="terminal" role="img" aria-label="Terminal showing backend services status">
+          <div class="terminal-bar">
+            <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+            <span class="terminal-title">status — samip@backend</span>
+          </div>
+          <div class="terminal-body" id="termBody"></div>
+        </div>
+      </section>
+
+      <!-- STACK -->
+      <section id="stack" class="stack">
+        <p class="section-label"><span class="idx">01</span> stack</p>
+        <div class="stack-grid">
+          <div class="stack-group">
+            <h3>core</h3>
+            <ul>
+              <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+              <li><i class="fa-solid fa-server"></i> Express</li>
+              <li><i class="fa-brands fa-square-js"></i> TypeScript</li>
+              <li><i class="fa-brands fa-react"></i> React</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>data</h3>
+            <ul>
+              <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
+              <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
+              <li><i class="fa-solid fa-bolt"></i> Redis</li>
+              <li><i class="fa-solid fa-diagram-project"></i> Prisma / Mongoose</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>infra &amp; tooling</h3>
+            <ul>
+              <li><i class="fa-brands fa-docker"></i> Docker</li>
+              <li><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</li>
+              <li><i class="fa-solid fa-key"></i> JWT / OAuth</li>
+              <li><i class="fa-solid fa-plug"></i> REST &amp; WebSockets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="work">
+        <p class="section-label"><span class="idx">02</span> projects</p>
+        <h2 class="work-title">Things I've built end‑to‑end.</h2>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project">
+            <div class="project-head">
+              <span class="route">/projects/projectbro</span>
+              <span class="status live">production</span>
             </div>
-        </nav>
-
-        <main>
-            <section class="hero">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="hero-title">
-                            <span>Samip</span>
-                            <span>Poudel</span>
-                        </h1>
-                        <p class="hero-desc">
-                            Building scalable web applications with modern
-                            technologies. Specialized in backend development.
-                        </p>
-                        <div class="hero-actions">
-                            <a
-                                href="https://www.linkedin.com/in/samippoudel123/"
-                                target="_blank"
-                                class="btn-primary"
-                            >
-                                <span>Connect</span>
-                                <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M1 15L15 1M15 1H5M15 1V11"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                    />
-                                </svg>
-                            </a>
-                            <a href="#work" class="btn-secondary">View Work</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tech-stack">
-                    <span class="stack-label">Tech Stack</span>
-                    <div class="stack-items">
-                        <span>Typescript</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>MongoDB</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-            </section>
-
-            
-
-            <section id="contact" class="contact">
-                <div class="contact-content">
-                    <h2>Let's Work Together</h2>
-                    <p>
-                        Available for freelance projects and full-time
-                        opportunities
-                    </p>
-                    <div class="contact-methods">
-                        <a
-                            href="https://www.linkedin.com/in/samippoudel123/"
-                            target="_blank"
-                            class="contact-link"
-                        >
-                            <span>LinkedIn</span>
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 20 20"
-                                fill="none"
-                            >
-                                <path
-                                    d="M4 16L16 4M16 4H6M16 4V14"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <span>© 2025 Samip Poudel</span>
-                <span>Full Stack Developer</span>
+            <h3>ProjectBro</h3>
+            <p class="project-desc">
+              A project management platform for teams — boards, sprints,
+              and task ownership backed by a permissions model built for
+              multiple roles per workspace. Focus was on a clean data
+              model for tasks/comments/activity feeds and keeping the
+              API fast as boards grow.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
+              ><span>TypeScript</span><span>React</span><span>Redis</span>
             </div>
-        </footer>
+            <div class="project-links">
+              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </article>
 
-        <script src="script.js"></script>
-    </body>
+          <!-- Project 2 -->
+          <article class="project">
+            <div class="project-head">
+              <span class="route">/projects/bizbro</span>
+              <span class="status live">production</span>
+            </div>
+            <h3>BizBro</h3>
+            <p class="project-desc">
+              A business management suite covering inventory, invoicing,
+              and day-to-day operations for small businesses. Built
+              around a multi-tenant backend with strict data isolation
+              per business and reporting endpoints that aggregate
+              across large record sets without slowing the app down.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span
+              ><span>TypeScript</span><span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <div class="project-head">
+              <span class="route">/projects/findr</span>
+              <span class="status live">production</span>
+            </div>
+            <h3>Findr</h3>
+            <p class="project-desc">
+              Appointment booking and service discovery — find local
+              service providers, check real-time availability, and book
+              a slot without double-booking. The core problem was
+              concurrency-safe scheduling and search, so booking writes
+              are guarded against race conditions and provider search is
+              indexed for fast filtering by location and category.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
+              ><span>Redis</span><span>TypeScript</span><span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project">
+            <div class="project-head">
+              <span class="route">/projects/ecommerce</span>
+              <span class="status live">production</span>
+            </div>
+            <h3>Ecommerce Platform</h3>
+            <p class="project-desc">
+              A full storefront-to-checkout system — product catalog,
+              cart, orders, and payment handling. Built with careful
+              attention to inventory consistency under concurrent
+              checkouts and a cart/session layer in Redis to keep the
+              browsing experience fast.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span
+              ><span>Redis</span><span>React</span><span>Stripe API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project">
+            <div class="project-head">
+              <span class="route">/projects/kothkhoj</span>
+              <span class="status live">production</span>
+            </div>
+            <h3>KothKhoj</h3>
+            <p class="project-desc">
+              An Airbnb-style rental marketplace — property listings,
+              search by location and dates, and a booking flow that
+              keeps availability in sync across simultaneous requests.
+              Listings and search are backed by PostgreSQL with
+              geospatial queries; caching keeps popular searches quick.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
+              ><span>Redis</span><span>TypeScript</span><span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <p class="section-label"><span class="idx">03</span> contact</p>
+        <h2>Let's build something<br />that has to work.</h2>
+        <p class="contact-desc">
+          Open to freelance projects and full-time backend / full stack
+          roles.
+        </p>
+        <div class="contact-methods">
+          <a
+            href="https://www.linkedin.com/in/samippoudel123/"
+            target="_blank"
+            class="contact-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <span>© <span id="year">2026</span> Samip Poudel</span>
+        <span>Full Stack Developer</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
