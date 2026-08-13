@@ -1,89 +1,44 @@
-// ---------- Terminal boot sequence ----------
-const termBody = document.getElementById("termBody");
+document.addEventListener('DOMContentLoaded', () => {
 
-const bootLines = [
-  { text: "$ system status --services", cls: "path" },
-  { text: "resolving stack ..." },
-  { text: "✓ node.js        online   12ms", cls: "ok" },
-  { text: "✓ express        online    8ms", cls: "ok" },
-  { text: "✓ postgresql     online   19ms", cls: "ok" },
-  { text: "✓ mongodb        online   14ms", cls: "ok" },
-  { text: "✓ redis          online    2ms", cls: "ok" },
-  { text: "✓ typescript     compiled  0 errors", cls: "ok" },
-  { text: " " },
-  { text: "$ whoami" },
-  { text: "samip poudel — backend-focused full stack dev", cls: "path" },
-  { text: "$ cat focus.txt" },
-  { text: "APIs · data modeling · auth · performance" },
-];
+  // Mobile nav toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const siteNav = document.getElementById('site-nav');
 
-function typeTerminal() {
-  let lineIndex = 0;
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = siteNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
 
-  function nextLine() {
-    if (lineIndex >= bootLines.length) {
-      const cursor = document.createElement("span");
-      cursor.className = "cursor-blink";
-      termBody.appendChild(cursor);
-      return;
-    }
-
-    const { text, cls } = bootLines[lineIndex];
-    const lineEl = document.createElement("div");
-    lineEl.className = "line" + (cls ? " " + cls : "");
-    termBody.appendChild(lineEl);
-
-    let charIndex = 0;
-    const speed = text.startsWith("$") ? 35 : 8;
-
-    function typeChar() {
-      if (charIndex < text.length) {
-        lineEl.textContent += text[charIndex];
-        charIndex++;
-        setTimeout(typeChar, speed);
-      } else {
-        lineIndex++;
-        setTimeout(nextLine, text.trim() === "" ? 80 : 160);
-      }
-    }
-    typeChar();
+    siteNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        siteNav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 
-  nextLine();
-}
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
-if (termBody) {
-  typeTerminal();
-}
+    revealEls.forEach(el => observer.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  }
 
-// ---------- Dynamic footer year ----------
-const yearEl = document.getElementById("year");
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
+  // Footer year
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) {
+    yearEl.textContent = `© ${new Date().getFullYear()}`;
+  }
 
-// ---------- Smooth scroll for anchor links ----------
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    const targetId = this.getAttribute("href");
-    const target = document.querySelector(targetId);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
 });
-
-// ---------- Scroll reveal ----------
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-document.querySelectorAll(".project").forEach((el) => observer.observe(el));
