@@ -1,269 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samip Poudel — Backend-Focused Full Stack Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="grid-overlay" aria-hidden="true"></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samip Poudel</title>
+<meta name="description" content="Samip Poudel, backend developer. Node.js, TypeScript, NestJS, PostgreSQL, Redis and queue-based systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <nav class="nav">
-      <div class="nav-content">
-        <a href="#top" class="nav-logo">samip<span class="dot">.</span>dev</a>
-        <div class="nav-links">
-          <a href="#stack"><span class="idx">01</span> stack</a>
-          <a href="#work"><span class="idx">02</span> projects</a>
-          <a href="#contact"><span class="idx">03</span> contact</a>
-        </div>
-        <a
-          href="https://www.linkedin.com/in/samippoudel123/"
-          target="_blank"
-          class="nav-cta"
-          >Connect →</a
-        >
-      </div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- dedicated top anchor so `#top` reliably scrolls to page top -->
+<div id="top"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#top" aria-label="Samip Poudel, home">
+      <span class="logo-prompt">~/</span>samip.poudel<span class="cursor" aria-hidden="true">_</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#stack" class="nav-link">Stack</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
 
-    <main id="top">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="ping"></span> available for work</p>
-          <h1 class="hero-title">
-            full&nbsp;stack<br />
-            <span class="outline">developer.</span>
-          </h1>
-          <p class="hero-desc">
-            I design and ship the systems underneath the product —
-            APIs, data models, and services that hold up under real
-            traffic. Frontend when the job needs one.
-          </p>
-          <div class="hero-actions">
-            <a
-              href="https://www.linkedin.com/in/samippoudel123/"
-              target="_blank"
-              class="btn-primary"
-              >View LinkedIn</a
-            >
-            <a href="#work" class="btn-secondary">See projects</a>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-small linkedin-btn" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
+        <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        Connect
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow reveal"><span class="status-dot" aria-hidden="true"></span>Open to backend roles</p>
+
+      <h1 class="hero-title reveal">
+        Samip Poudel
+      </h1>
+      <p class="hero-role reveal">Backend Developer<span class="cursor cursor-role" aria-hidden="true">_</span></p>
+
+      <p class="hero-sub reveal">
+        Mostly backend. Building APIs, real-time features, background jobs, and data layers.
+        Enough frontend experience to take a feature from idea to production.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
+          <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          Connect on LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="#work">View projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="section" id="stack">
+    <div class="section-inner">
+      <p class="section-eyebrow">$ cat stack.json</p>
+      <h2 class="section-title">What I build with</h2>
+      <p class="section-lede">Mostly backend. Enough frontend to ship a feature end to end without waiting on anyone.</p>
+
+      <div class="stack-grid">
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title">Language &amp; runtime</h3>
+          <ul class="chip-list">
+            <li class="chip">TypeScript</li>
+            <li class="chip">Node.js</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title">Backend frameworks</h3>
+          <ul class="chip-list">
+            <li class="chip">Express</li>
+            <li class="chip">NestJS</li>
+            <li class="chip">WebSockets</li>
+            <li class="chip">REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title">Data layer</h3>
+          <ul class="chip-list">
+            <li class="chip">PostgreSQL</li>
+            <li class="chip">MongoDB</li>
+            <li class="chip">TypeORM</li>
+            <li class="chip">Prisma</li>
+            <li class="chip">Mongoose</li>
+            <li class="chip">Redis</li>
+            <li class="chip">BullMQ</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title">Frontend</h3>
+          <ul class="chip-list">
+            <li class="chip">React</li>
+            <li class="chip">Redux</li>
+            <li class="chip">Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="stack-group-title">Infra &amp; tooling</h3>
+          <ul class="chip-list">
+            <li class="chip">Docker</li>
+            <li class="chip">Git</li>
+            <li class="chip">JWT / session auth</li>
+            <li class="chip">RBAC / PBAC design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">$ cat experience.log</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Backend Developer</h3>
+              <span class="timeline-date">May 2026 — Present</span>
+            </div>
+            <p class="timeline-company">Leaflet Digital Solutions · Full-time</p>
+            <ul class="timeline-list">
+              <li>Built a product delivery system for a multi-vendor e-commerce platform.</li>
+              <li>Built a role-based / permission-based (RBAC + PBAC) staff access system from scratch on a multi-vendor e-commerce platform</li>
+              <li>Leading a small team to develop a web app for a manpower company to manage visa processing and documents.</li>
+              <li>Built and maintain a CMS.</li>
+            </ul>
           </div>
         </div>
 
-        <div class="terminal" role="img" aria-label="Terminal showing backend services status">
-          <div class="terminal-bar">
-            <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
-            <span class="terminal-title">status — samip@backend</span>
-          </div>
-          <div class="terminal-body" id="termBody"></div>
-        </div>
-      </section>
-
-      <!-- STACK -->
-      <section id="stack" class="stack">
-        <p class="section-label"><span class="idx">01</span> stack</p>
-        <div class="stack-grid">
-          <div class="stack-group">
-            <h3>core</h3>
-            <ul>
-              <li><i class="fa-brands fa-node-js"></i> Node.js</li>
-              <li><i class="fa-solid fa-server"></i> Express</li>
-              <li><i class="fa-brands fa-square-js"></i> TypeScript</li>
-              <li><i class="fa-brands fa-react"></i> React</li>
-            </ul>
-          </div>
-          <div class="stack-group">
-            <h3>data</h3>
-            <ul>
-              <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
-              <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
-              <li><i class="fa-solid fa-bolt"></i> Redis</li>
-              <li><i class="fa-solid fa-diagram-project"></i> Prisma / Mongoose</li>
-            </ul>
-          </div>
-          <div class="stack-group">
-            <h3>infra &amp; tooling</h3>
-            <ul>
-              <li><i class="fa-brands fa-docker"></i> Docker</li>
-              <li><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</li>
-              <li><i class="fa-solid fa-key"></i> JWT / OAuth</li>
-              <li><i class="fa-solid fa-plug"></i> REST &amp; WebSockets</li>
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Backend Developer Intern</h3>
+              <span class="timeline-date">Jan 2026 — May 2026</span>
+            </div>
+            <p class="timeline-company">Leaflet Digital Solutions</p>
+            <ul class="timeline-list">
+              <li>Built a loyalty points system and a product review system for an e-commerce platform.</li>
+              <li>Fixed bugs and shipped backend work on multiple features across different projects.</li>
+              <li>Built several features for the CMS.</li>
             </ul>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- WORK -->
-      <section id="work" class="work">
-        <p class="section-label"><span class="idx">02</span> projects</p>
-        <h2 class="work-title">Things I've built end‑to‑end.</h2>
+      <p class="education-line reveal">BSc in Computer Science and Information Technology (CSIT) — Tribhuvan University, 2024 – Present</p>
+    </div>
+  </section>
 
-        <div class="projects">
-          <!-- Project 1 -->
-          <article class="project">
-            <div class="project-head">
-              <span class="route">/projects/projectbro</span>
-              <span class="status live">production</span>
-            </div>
-            <h3>ProjectBro</h3>
-            <p class="project-desc">
-              A project management platform for teams — boards, sprints,
-              and task ownership backed by a permissions model built for
-              multiple roles per workspace. Focus was on a clean data
-              model for tasks/comments/activity feeds and keeping the
-              API fast as boards grow.
-            </p>
-            <div class="project-tech">
-              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
-              ><span>TypeScript</span><span>React</span><span>Redis</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </article>
+  <!-- WORK / PROJECTS -->
+  <section class="section" id="work">
+    <div class="section-inner">
+      <p class="section-eyebrow">$ ls ./projects</p>
+      <h2 class="section-title">Things I've shipped on my own time</h2>
 
-          <!-- Project 2 -->
-          <article class="project">
-            <div class="project-head">
-              <span class="route">/projects/bizbro</span>
-              <span class="status live">production</span>
-            </div>
-            <h3>BizBro</h3>
-            <p class="project-desc">
-              A business management suite covering inventory, invoicing,
-              and day-to-day operations for small businesses. Built
-              around a multi-tenant backend with strict data isolation
-              per business and reporting endpoints that aggregate
-              across large record sets without slowing the app down.
-            </p>
-            <div class="project-tech">
-              <span>Node.js</span><span>Express</span><span>MongoDB</span
-              ><span>TypeScript</span><span>React</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </article>
+      <div class="project-grid">
 
-          <!-- Project 3 -->
-          <article class="project">
-            <div class="project-head">
-              <span class="route">/projects/findr</span>
-              <span class="status live">production</span>
+        <article class="project-card reveal">
+          <div class="project-window">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="project-window-title">bull-console.sh</span>
+          </div>
+          <div class="project-body">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="19" cy="18" r="2.4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+            </div>
+            <h3>Bull Console</h3>
+            <p class="project-tag">BullMQ monitoring & debugging tool</p>
+            <p class="project-desc">A dashboard for BullMQ job queues — watch queues in real time, retry single jobs or a whole failed batch, and walk a job's flow tree to see exactly where a parent/child chain broke.</p>
+            <ul class="project-tech">
+              <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Redis</li><li>BullMQ</li><li>Tailwind</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-window">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="project-window-title">findr.sh</span>
+          </div>
+          <div class="project-body">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
             <h3>Findr</h3>
-            <p class="project-desc">
-              Appointment booking and service discovery — find local
-              service providers, check real-time availability, and book
-              a slot without double-booking. The core problem was
-              concurrency-safe scheduling and search, so booking writes
-              are guarded against race conditions and provider search is
-              indexed for fast filtering by location and category.
-            </p>
-            <div class="project-tech">
-              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
-              ><span>Redis</span><span>TypeScript</span><span>React</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </article>
+            <p class="project-tag">Service finder & appointment booking</p>
+            <p class="project-desc">A platform for finding local service providers and booking appointments. Customers search and book; providers get a dashboard to manage listings, staff schedules and incoming appointments.</p>
+            <ul class="project-tech">
+              <li>React</li><li>Node.js</li><li>Express</li><li>TypeScript</li><li>PostgreSQL</li>
+            </ul>
+          </div>
+        </article>
 
-          <!-- Project 4 -->
-          <article class="project">
-            <div class="project-head">
-              <span class="route">/projects/ecommerce</span>
-              <span class="status live">production</span>
+        <article class="project-card reveal">
+          <div class="project-window">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="project-window-title">projectbro.sh</span>
+          </div>
+          <div class="project-body">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 3.5v6.5c0 4.5-3 7-7 8-4-1-7-3.5-7-8V6.5L12 3z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
             </div>
-            <h3>Ecommerce Platform</h3>
-            <p class="project-desc">
-              A full storefront-to-checkout system — product catalog,
-              cart, orders, and payment handling. Built with careful
-              attention to inventory consistency under concurrent
-              checkouts and a cart/session layer in Redis to keep the
-              browsing experience fast.
-            </p>
-            <div class="project-tech">
-              <span>Node.js</span><span>Express</span><span>MongoDB</span
-              ><span>Redis</span><span>React</span><span>Stripe API</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </article>
+            <h3>ProjectBro</h3>
+            <p class="project-tag">Internal project management tool</p>
+            <p class="project-desc">A project management tool for internal teams with full access control — role-based (RBAC) and permission-based (PBAC) rules enforced per project, so what someone can see or do changes project by project.</p>
+            <ul class="project-tech">
+              <li>Node.js</li><li>Express</li><li>TypeScript</li><li>RBAC</li><li>PBAC</li>
+            </ul>
+          </div>
+        </article>
 
-          <!-- Project 5 -->
-          <article class="project">
-            <div class="project-head">
-              <span class="route">/projects/kothkhoj</span>
-              <span class="status live">production</span>
-            </div>
-            <h3>KothKhoj</h3>
-            <p class="project-desc">
-              An Airbnb-style rental marketplace — property listings,
-              search by location and dates, and a booking flow that
-              keeps availability in sync across simultaneous requests.
-              Listings and search are backed by PostgreSQL with
-              geospatial queries; caching keeps popular searches quick.
-            </p>
-            <div class="project-tech">
-              <span>Node.js</span><span>Express</span><span>PostgreSQL</span
-              ><span>Redis</span><span>TypeScript</span><span>React</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="link">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              <a href="#" class="link">Code <i class="fa-brands fa-github"></i></a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact" class="contact">
-        <p class="section-label"><span class="idx">03</span> contact</p>
-        <h2>Let's build something<br />that has to work.</h2>
-        <p class="contact-desc">
-          Open to freelance projects and full-time backend / full stack
-          roles.
-        </p>
-        <div class="contact-methods">
-          <a
-            href="https://www.linkedin.com/in/samippoudel123/"
-            target="_blank"
-            class="contact-link"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <span>© <span id="year">2026</span> Samip Poudel</span>
-        <span>Full Stack Developer</span>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- CONTACT / CTA -->
+  <section class="section cta-section" id="contact">
+    <div class="section-inner cta-inner reveal">
+      <p class="section-eyebrow">$ ./connect.sh</p>
+      <h2 class="cta-title">Let's build something reliable.</h2>
+      <p class="cta-sub">Available for freelance work and full-time opportunities.</p>
+      <a class="btn btn-primary btn-large" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
+        <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>Samip Poudel</span>
+    <span class="footer-year" id="footer-year"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
