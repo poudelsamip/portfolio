@@ -24,10 +24,10 @@
     </a>
 
     <nav class="site-nav" id="site-nav">
-      <a href="#stack" class="nav-link">Stack</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#work" class="nav-link">Work</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#stack" class="nav-link"><span class="nav-index">01</span>Stack</a>
+      <a href="#experience" class="nav-link"><span class="nav-index">02</span>Experience</a>
+      <a href="#work" class="nav-link"><span class="nav-index">03</span>Work</a>
+      <a href="#contact" class="nav-link"><span class="nav-index">04</span>Contact</a>
     </nav>
 
     <div class="header-actions">
@@ -142,7 +142,7 @@
         <div class="timeline-line" aria-hidden="true"></div>
 
         <div class="timeline-item">
-          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-dot timeline-dot-active" aria-hidden="true"></div>
           <div class="timeline-content">
             <div class="timeline-head">
               <h3>Backend Developer</h3>
@@ -175,7 +175,16 @@
         </div>
       </div>
 
-      <p class="education-line reveal">BSc in Computer Science and Information Technology (CSIT) — Tribhuvan University, 2024 – Present</p>
+      <div class="education-card reveal">
+        <div class="education-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M6 10.5v4c0 1.4 2.7 2.7 6 2.7s6-1.3 6-2.7v-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M21 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div class="education-body">
+          <p class="education-label">Education</p>
+          <h3 class="education-degree">BSc in Computer Science and Information Technology (CSIT)</h3>
+          <p class="education-meta">Tribhuvan University · 2024 – Present</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -193,7 +202,7 @@
             <span class="project-window-title">bull-console.sh</span>
           </div>
           <div class="project-body">
-            <div class="project-icon" aria-hidden="true">
+            <div class="project-icon project-icon-teal" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="19" cy="18" r="2.4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
             </div>
             <h3>Bull Console</h3>
@@ -211,7 +220,7 @@
             <span class="project-window-title">findr.sh</span>
           </div>
           <div class="project-body">
-            <div class="project-icon" aria-hidden="true">
+            <div class="project-icon project-icon-blue" aria-hidden="true">
               <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
             </div>
             <h3>Findr</h3>
@@ -229,7 +238,7 @@
             <span class="project-window-title">projectbro.sh</span>
           </div>
           <div class="project-body">
-            <div class="project-icon" aria-hidden="true">
+            <div class="project-icon project-icon-amber" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M12 3l7 3.5v6.5c0 4.5-3 7-7 8-4-1-7-3.5-7-8V6.5L12 3z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
             </div>
             <h3>ProjectBro</h3>
@@ -247,9 +256,10 @@
 
   <!-- CONTACT / CTA -->
   <section class="section cta-section" id="contact">
+    <span class="cta-glyph" aria-hidden="true">{ }</span>
     <div class="section-inner cta-inner reveal">
       <p class="section-eyebrow">$ ./connect.sh</p>
-      <h2 class="cta-title">Let's build something reliable.</h2>
+      <h2 class="cta-title">Let's build something <span class="is-accent">reliable</span>.</h2>
       <p class="cta-sub">Available for freelance work and full-time opportunities.</p>
       <a class="btn btn-primary btn-large" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
         <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
@@ -262,8 +272,13 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <span>Samip Poudel</span>
-    <span class="footer-year" id="footer-year"></span>
+    <a class="footer-logo" href="#top">
+      <span class="logo-prompt">~/</span>samip.poudel<span class="cursor" aria-hidden="true">_</span>
+    </a>
+    <div class="footer-meta">
+      <span class="footer-year" id="footer-year"></span>
+      <a class="footer-top" href="#top">Back to top ↑</a>
+    </div>
   </div>
 </footer>
 
