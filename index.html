@@ -1,287 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samip Poudel</title>
-<meta name="description" content="Samip Poudel, backend developer. Node.js, TypeScript, NestJS, PostgreSQL, Redis and queue-based systems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Samip Poudel — backend developer building reliable systems, APIs and product experiences."
+        />
+        <title>Samip Poudel</title>
+        <script>
+            document.documentElement.classList.add("js");
+        </script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="progress" aria-hidden="true"><span></span></div>
 
-<a class="skip-link" href="#main">Skip to content</a>
+        <header class="top">
+            <div class="top-inner wrap">
+                <a class="brand" href="#top" aria-label="Samip Poudel home">
+                    <!-- <span class="brand-mark">SP</span> -->
+                    <span>Samip Poudel</span>
+                </a>
 
-<!-- dedicated top anchor so `#top` reliably scrolls to page top -->
-<div id="top"></div>
-
-<header class="site-header">
-  <div class="header-inner">
-    <a class="logo" href="#top" aria-label="Samip Poudel, home">
-      <span class="logo-prompt">~/</span>samip.poudel<span class="cursor" aria-hidden="true">_</span>
-    </a>
-
-    <nav class="site-nav" id="site-nav">
-      <a href="#stack" class="nav-link"><span class="nav-index">01</span>Stack</a>
-      <a href="#experience" class="nav-link"><span class="nav-index">02</span>Experience</a>
-      <a href="#work" class="nav-link"><span class="nav-index">03</span>Work</a>
-      <a href="#contact" class="nav-link"><span class="nav-index">04</span>Contact</a>
-    </nav>
-
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small linkedin-btn" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
-        <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-        Connect
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- HERO -->
-  <section class="hero">
-    <span class="hero-glyph" aria-hidden="true">{ }</span>
-
-    <div class="hero-inner">
-      <p class="hero-kicker reveal"><span class="hero-kicker-index">01</span> Backend Developer<span class="cursor" aria-hidden="true">_</span></p>
-
-      <h1 class="hero-title reveal">
-        <span>Samip</span>
-        <span class="is-accent">Poudel</span>
-      </h1>
-
-      <p class="hero-sub reveal">
-        Mostly backend. Building APIs, real-time features, background jobs, and data layers.
-        Enough frontend experience to take a feature from idea to production.
-      </p>
-
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
-          <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-          Connect on LinkedIn
-        </a>
-        <a class="btn btn-ghost" href="#work">View projects</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- STACK -->
-  <section class="section" id="stack">
-    <div class="section-inner">
-      <p class="section-eyebrow">$ cat stack.json</p>
-      <h2 class="section-title">What I build with</h2>
-      <p class="section-lede">Mostly backend. Enough frontend to ship a feature end to end without waiting on anyone.</p>
-
-      <div class="stack-grid">
-        <div class="stack-group reveal">
-          <h3 class="stack-group-title">Language &amp; runtime</h3>
-          <ul class="chip-list">
-            <li class="chip">TypeScript</li>
-            <li class="chip">Node.js</li>
-          </ul>
-        </div>
-
-        <div class="stack-group reveal">
-          <h3 class="stack-group-title">Backend frameworks</h3>
-          <ul class="chip-list">
-            <li class="chip">Express</li>
-            <li class="chip">NestJS</li>
-            <li class="chip">WebSockets</li>
-            <li class="chip">REST APIs</li>
-          </ul>
-        </div>
-
-        <div class="stack-group reveal">
-          <h3 class="stack-group-title">Data layer</h3>
-          <ul class="chip-list">
-            <li class="chip">PostgreSQL</li>
-            <li class="chip">MongoDB</li>
-            <li class="chip">TypeORM</li>
-            <li class="chip">Prisma</li>
-            <li class="chip">Mongoose</li>
-            <li class="chip">Redis</li>
-            <li class="chip">BullMQ</li>
-          </ul>
-        </div>
-
-        <div class="stack-group reveal">
-          <h3 class="stack-group-title">Frontend</h3>
-          <ul class="chip-list">
-            <li class="chip">React</li>
-            <li class="chip">Redux</li>
-            <li class="chip">Tailwind CSS</li>
-          </ul>
-        </div>
-
-        <div class="stack-group reveal">
-          <h3 class="stack-group-title">Infra &amp; tooling</h3>
-          <ul class="chip-list">
-            <li class="chip">Docker</li>
-            <li class="chip">Git</li>
-            <li class="chip">JWT / session auth</li>
-            <li class="chip">RBAC / PBAC design</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section section-alt" id="experience">
-    <div class="section-inner">
-      <p class="section-eyebrow">$ cat experience.log</p>
-      <h2 class="section-title">Experience</h2>
-
-      <div class="timeline reveal">
-        <div class="timeline-line" aria-hidden="true"></div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot timeline-dot-active" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Backend Developer</h3>
-              <span class="timeline-date">May 2026 — Present</span>
+                <nav aria-label="Primary navigation">
+                    <a href="#work">Work</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
-            <p class="timeline-company">Leaflet Digital Solutions · Full-time</p>
-            <ul class="timeline-list">
-              <li>Built a product delivery system for a multi-vendor e-commerce platform.</li>
-              <li>Built a role-based / permission-based (RBAC + PBAC) staff access system from scratch on a multi-vendor e-commerce platform</li>
-              <li>Leading a small team to develop a web app for a manpower company to manage visa processing and documents.</li>
-              <li>Built and maintain a CMS.</li>
-            </ul>
-          </div>
-        </div>
+        </header>
 
-        <div class="timeline-item">
-          <div class="timeline-dot" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <div class="timeline-head">
-              <h3>Backend Developer Intern</h3>
-              <span class="timeline-date">Jan 2026 — May 2026</span>
+        <main id="top">
+            <section class="hero wrap">
+                <!-- <div class="hero-kicker">
+                    <span class="pulse"></span>
+                    <span>Backend developer</span>
+                    <span class="slash">/</span>
+                    <span>Nepal</span>
+                </div> -->
+
+                <div class="hero-title">
+                    <p class="eyebrow">I build the invisible parts.</p>
+                    <h1>Systems that<br /><em>hold up.</em></h1>
+                </div>
+
+                <div class="hero-bottom">
+                    <p class="lead">
+                        I build the parts of a product you rarely see: queues,
+                        real-time features, access control and the APIs behind
+                        them. Enough frontend experience to take an idea to
+                        production.
+                    </p>
+                    <div class="hero-aside">
+                        <span>Currently</span>
+                        <strong>Building & shipping</strong>
+                        <span
+                            ><a href="https://nepalunlocked.com" target="_blank"
+                                >nepalunlocked.com</a
+                            ></span
+                        >
+                    </div>
+                </div>
+
+                <div class="hero-links">
+                    <a
+                        class="arrow-link"
+                        href="https://www.linkedin.com/in/samippoudel123"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Connect on LinkedIn <span>↗</span>
+                    </a>
+                    <a class="text-link" href="#work">See selected work ↓</a>
+                </div>
+            </section>
+
+            <div class="wrap">
+                <section id="work" class="section work-section">
+                    <div class="section-head reveal">
+                        <p class="section-no">01</p>
+                        <div>
+                            <p class="eyebrow">Selected work</p>
+                            <h2>Things I’ve built.</h2>
+                        </div>
+                        <p class="section-note">
+                            A few systems, products and experiments.
+                        </p>
+                    </div>
+
+                    <div class="project-grid">
+                        <article class="project project-main reveal">
+                            <div class="project-top">
+                                <span class="project-no">01 / 03</span>
+                                <span class="project-state">Live system</span>
+                            </div>
+                            <div class="project-number">01</div>
+                            <div class="project-content">
+                                <p class="project-type">
+                                    Ticket booking platform
+                                </p>
+                                <h3>Ticket Bro</h3>
+                                <p class="project-description">
+                                    A ticketing system designed around the hard
+                                    parts of booking: concurrency, expiring
+                                    holds, flash sales and payment reliability.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>Concurrency-safe seat booking</li>
+                                    <li>
+                                        Automatically expiring 10-minute holds
+                                    </li>
+                                    <li>
+                                        Queues + rate limiting for flash sales
+                                    </li>
+                                    <li>Idempotent payments + webhooks</li>
+                                </ul>
+                                <div class="project-footer">
+                                    <ul class="chips" aria-label="Technologies">
+                                        <li>PostgreSQL</li>
+                                        <li>Express</li>
+                                        <li>React</li>
+                                        <li>Node.js</li>
+                                        <li>TypeScript</li>
+                                        <li>Prisma</li>
+                                        <li>Redis</li>
+                                        <li>BullMQ</li>
+                                        <li>eSewa</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://ticketbro.example.com"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Live ↗</a
+                                        >
+                                        <a
+                                            href="https://github.com/your-username/ticket-bro"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >GitHub ↗</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project project-secondary reveal">
+                            <div class="project-top">
+                                <span class="project-no">02 / 03</span>
+                                <span class="project-state"
+                                    >Developer tool</span
+                                >
+                            </div>
+                            <div class="project-number">02</div>
+                            <div class="project-content">
+                                <p class="project-type">
+                                    BullMQ monitoring & debugging
+                                </p>
+                                <h3>Bull Console</h3>
+                                <p class="project-description">
+                                    A focused control room for seeing queues,
+                                    tracing failures and understanding what
+                                    background jobs are actually doing.
+                                </p>
+                                <ul class="feature-list">
+                                    <li>Real-time queue monitoring</li>
+                                    <li>Retry jobs or failed batches</li>
+                                    <li>Flow tree for broken job chains</li>
+                                    <li>Payloads, attempts and stack traces</li>
+                                </ul>
+                                <div class="project-footer">
+                                    <ul class="chips" aria-label="Technologies">
+                                        <li>React</li>
+                                        <li>TypeScript</li>
+                                        <li>Node.js</li>
+                                        <li>Express</li>
+                                        <li>Redis</li>
+                                        <li>BullMQ</li>
+                                        <li>Tailwind</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://bullconsole.example.com"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >Live ↗</a
+                                        >
+                                        <a
+                                            href="https://github.com/your-username/bull-console"
+                                            target="_blank"
+                                            rel="noopener"
+                                            >GitHub ↗</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project project-wide reveal">
+                            <div class="project-top">
+                                <span class="project-no">03 / 03</span>
+                                <span class="project-state">In progress</span>
+                            </div>
+                            <div>
+                                <p class="project-type">Current build</p>
+                                <h3>Nepal Unlocked</h3>
+                                <p>
+                                    What I’m working on right now —
+                                    <a
+                                        href="https://nepalunlocked.com"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >nepalunlocked.com ↗</a
+                                    >
+                                </p>
+                            </div>
+                            <span class="wide-arrow">↗</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="experience" class="section">
+                    <div class="section-head reveal">
+                        <p class="section-no">02</p>
+                        <div>
+                            <p class="eyebrow">Experience</p>
+                            <h2>Where I’ve worked.</h2>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-item reveal">
+                            <div class="timeline-date">May 2026 — Aug 2026</div>
+                            <div>
+                                <h3>Backend Developer</h3>
+                                <p class="org">
+                                    Leaflet Digital Solutions
+                                    <span>· Full-time</span>
+                                </p>
+                                <ul class="feature-list">
+                                    <li>
+                                        Built a product delivery system for a
+                                        multi-vendor e-commerce platform.
+                                    </li>
+                                    <li>
+                                        Built a role-based and permission-based
+                                        (RBAC + PBAC) staff access system from
+                                        scratch.
+                                    </li>
+                                    <li>
+                                        Leading a small team building a web app
+                                        for a manpower company to manage visa
+                                        processing and documents.
+                                    </li>
+                                    <li>Built and maintain a CMS.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item reveal">
+                            <div class="timeline-date">Jan 2026 — May 2026</div>
+                            <div>
+                                <h3>Backend Developer Intern</h3>
+                                <p class="org">Leaflet Digital Solutions</p>
+                                <ul class="feature-list">
+                                    <li>
+                                        Built a loyalty points system and a
+                                        product review system for an e-commerce
+                                        platform.
+                                    </li>
+                                    <li>
+                                        Fixed bugs and shipped backend work
+                                        across multiple projects.
+                                    </li>
+                                    <li>Built several features for the CMS.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="skills" class="section">
+                    <div class="section-head reveal">
+                        <p class="section-no">03</p>
+                        <div>
+                            <p class="eyebrow">Toolkit</p>
+                            <h2>What I work with.</h2>
+                        </div>
+                    </div>
+
+                    <div class="skill-grid">
+                        <div class="skill reveal">
+                            <span>01</span>
+                            <h3>Language & runtime</h3>
+                            <p>TypeScript · Node.js</p>
+                        </div>
+                        <div class="skill reveal">
+                            <span>02</span>
+                            <h3>Backend</h3>
+                            <p>Express · WebSockets · REST APIs</p>
+                        </div>
+                        <div class="skill reveal">
+                            <span>03</span>
+                            <h3>Data</h3>
+                            <p>
+                                PostgreSQL · MongoDB · TypeORM · Prisma ·
+                                Mongoose · Redis
+                            </p>
+                        </div>
+                        <div class="skill reveal">
+                            <span>04</span>
+                            <h3>Frontend</h3>
+                            <p>React · Redux · Zustand · Tailwind CSS</p>
+                        </div>
+                        <div class="skill reveal">
+                            <span>05</span>
+                            <h3>Infra & tooling</h3>
+                            <p>Docker · Git</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="section education">
+                    <div class="section-head reveal">
+                        <p class="section-no">04</p>
+                        <div>
+                            <p class="eyebrow">Education</p>
+                            <h2>Still learning.</h2>
+                        </div>
+                    </div>
+                    <div class="education-row reveal">
+                        <div>
+                            <h3>
+                                BSc in Computer Science and Information
+                                Technology (CSIT)
+                            </h3>
+                            <p>Tribhuvan University</p>
+                        </div>
+                        <span>2024 — Present</span>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact reveal">
+                    <p class="eyebrow">05 / Contact</p>
+                    <h2>Have something<br /><em>interesting?</em></h2>
+                    <a
+                        class="contact-link"
+                        href="https://www.linkedin.com/in/samippoudel123"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Let’s talk <span>↗</span>
+                    </a>
+                </section>
             </div>
-            <p class="timeline-company">Leaflet Digital Solutions</p>
-            <ul class="timeline-list">
-              <li>Built a loyalty points system and a product review system for an e-commerce platform.</li>
-              <li>Fixed bugs and shipped backend work on multiple features across different projects.</li>
-              <li>Built several features for the CMS.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        </main>
 
-      <div class="education-card reveal">
-        <div class="education-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" fill="none"/><path d="M6 10.5v4c0 1.4 2.7 2.7 6 2.7s6-1.3 6-2.7v-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M21 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <div class="education-body">
-          <p class="education-label">Education</p>
-          <h3 class="education-degree">BSc in Computer Science and Information Technology (CSIT)</h3>
-          <p class="education-meta">Tribhuvan University · 2024 – Present</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <footer class="foot wrap">
+            <span>© <span id="year">2026</span> Samip Poudel</span>
+            <a href="#top">Back to top ↑</a>
+        </footer>
 
-  <!-- WORK / PROJECTS -->
-  <section class="section" id="work">
-    <div class="section-inner">
-      <p class="section-eyebrow">$ ls ./projects</p>
-      <h2 class="section-title">Things I've shipped on my own time</h2>
-
-      <div class="project-grid">
-
-        <article class="project-card reveal">
-          <div class="project-window">
-            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-            <span class="project-window-title">bull-console.sh</span>
-          </div>
-          <div class="project-body">
-            <div class="project-icon project-icon-teal" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="19" cy="18" r="2.4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
-            </div>
-            <h3>Bull Console</h3>
-            <p class="project-tag">BullMQ monitoring & debugging tool</p>
-            <p class="project-desc">A dashboard for BullMQ job queues — watch queues in real time, retry single jobs or a whole failed batch, and walk a job's flow tree to see exactly where a parent/child chain broke.</p>
-            <ul class="project-tech">
-              <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Redis</li><li>BullMQ</li><li>Tailwind</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-window">
-            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-            <span class="project-window-title">findr.sh</span>
-          </div>
-          <div class="project-body">
-            <div class="project-icon project-icon-blue" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Findr</h3>
-            <p class="project-tag">Service finder & appointment booking</p>
-            <p class="project-desc">A platform for finding local service providers and booking appointments. Customers search and book; providers get a dashboard to manage listings, staff schedules and incoming appointments.</p>
-            <ul class="project-tech">
-              <li>React</li><li>Node.js</li><li>Express</li><li>TypeScript</li><li>PostgreSQL</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-window">
-            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
-            <span class="project-window-title">projectbro.sh</span>
-          </div>
-          <div class="project-body">
-            <div class="project-icon project-icon-amber" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3l7 3.5v6.5c0 4.5-3 7-7 8-4-1-7-3.5-7-8V6.5L12 3z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>ProjectBro</h3>
-            <p class="project-tag">Internal project management tool</p>
-            <p class="project-desc">A project management tool for internal teams with full access control — role-based (RBAC) and permission-based (PBAC) rules enforced per project, so what someone can see or do changes project by project.</p>
-            <ul class="project-tech">
-              <li>Node.js</li><li>Express</li><li>TypeScript</li><li>RBAC</li><li>PBAC</li>
-            </ul>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT / CTA -->
-  <section class="section cta-section" id="contact">
-    <span class="cta-glyph" aria-hidden="true">{ }</span>
-    <div class="section-inner cta-inner reveal">
-      <p class="section-eyebrow">$ ./connect.sh</p>
-      <h2 class="cta-title">Let's build something <span class="is-accent">reliable</span>.</h2>
-      <p class="cta-sub">Available for freelance work and full-time opportunities.</p>
-      <a class="btn btn-primary btn-large" href="https://www.linkedin.com/in/samippoudel123" target="_blank" rel="noopener noreferrer" data-connect>
-        <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-        Connect on LinkedIn
-      </a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <a class="footer-logo" href="#top">
-      <span class="logo-prompt">~/</span>samip.poudel<span class="cursor" aria-hidden="true">_</span>
-    </a>
-    <div class="footer-meta">
-      <span class="footer-year" id="footer-year"></span>
-      <a class="footer-top" href="#top">Back to top ↑</a>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
